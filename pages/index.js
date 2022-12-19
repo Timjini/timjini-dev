@@ -1,15 +1,40 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Hero from '../components/Hero'
 import Logos from '../components/Logos'
 import Navbar from '../components/Navbar'
-import Framworks from '../components/Framworks'
+import Frameworks from '../components/Frameworks'
+import { GraphQLClient, gql } from 'graphql-request'
+import ProjectPost from '../components/ProjectPost'
 
-const inter = Inter({ subsets: ['VT323'] })
+const endpoint = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbukk0lj2sh801uk6syyh0f9/master');
 
-export default function Home() {
+const Query = 
+gql`{
+  projects {
+    id
+    title
+    excerpt
+    slug
+    image {
+      url
+    }
+  }
+}
+`;
+
+export async function getStaticProps() {
+  const {projects} = await endpoint.request(Query);
+  return {
+    props: {
+      projects,
+    },
+  }
+}
+
+
+export default function Home({projects}) {
   return (
     <>
       <Head>
@@ -21,8 +46,19 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar />
         <Hero />
-        <Logos />
-        <Framworks />
+        <Frameworks />
+        <div>
+        {projects.map((project) => (
+          <ProjectPost 
+            key={project.id} 
+            title={project.title}
+            excerpt={project.excerpt}
+            image={project.image}
+            slug={project.slug}
+
+             />
+        ))}
+        </div>
       
       </main>
     </>

@@ -12,14 +12,14 @@ function Hero() {
     <section className="">
          <div className='flex justify-center items-center h-full flex-wrap gap-4'>
           <div className='mx-auto max-w-lg text-center lg:mx-0 '>
-          <h1 className='text-3xl font-bold sm:text-4xl pt-24'>Full Stack Dev RoR & JS Framworks</h1>
+          <h1 className='text-3xl font-bold sm:text-4xl pt-24'>Full Stack Dev RoR & JS Frameworks</h1>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-        <a
-          className="block rounded border border-green-100 bg-green-200 px-12 py-3 text-sm font-medium text-dark hover:bg-transparent hover:text-dark focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-          href="/get-started"
+        <Link
+          className="block rounded border border-green-100 bg-green-200 px-12 py-3 text-sm font-medium text-dark hover:bg-green-300 hover:text-dark focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+          href="/projects"
         >
-          Get Started
-        </a>
+          Projects
+        </Link>
 
           </div>
       </div>
