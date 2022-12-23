@@ -1,0 +1,29 @@
+.content ul {
+    list-style: outside;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+
+}
+
+.content p {
+    margin: 0;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    line-height: 1.2;
+
+}
+
+.content h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px;
+}
+
+.content a {
+    color :rgb(205, 165, 243)
+}
+.content a:hover {
+    color :rgb(165, 76, 248)
+}
