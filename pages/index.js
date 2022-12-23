@@ -8,6 +8,7 @@ import Frameworks from '../components/Frameworks'
 import { GraphQLClient, gql } from 'graphql-request'
 import ProjectPost from '../components/ProjectPost'
 import Contact from '../components/Contact'
+import About from '../components/About'
 
 const endpoint = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbukk0lj2sh801uk6syyh0f9/master');
 
@@ -69,7 +70,7 @@ export default function Home({projects}) {
              />
         ))}
         </div>
-
+        <About />
         <Contact />
       
       </main>

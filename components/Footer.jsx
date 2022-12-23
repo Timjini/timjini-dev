@@ -12,14 +12,13 @@ function Footer() {
     </div>
 
     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-      consequuntur amet culpa cum itaque neque.
+    Full Stack Developer with a passion for building beautiful, intuitive, and functional websites and applications.
     </p>
 
     <nav aria-label="Footer Nav" className="mt-12">
       <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
         <li>
-          <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
+          <Link className="text-gray-700 transition hover:text-gray-700/75" href="/about">
             About
           </Link>
         </li>

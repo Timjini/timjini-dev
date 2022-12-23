@@ -1,5 +1,6 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
 import Navbar from '../components/Navbar'
+import Link from 'next/link'
 
 export default function Resume() {
   return (
@@ -27,9 +28,7 @@ export default function Resume() {
           <div className=" px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm font-medium text-gray-500">About</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-              Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-              qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-              pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
+            I am a full-stack developer with skills in Ruby on Rails and React. I can design and build intuitive web applications from start to finish, utilizing the latest tools and best practices.
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -42,9 +41,9 @@ export default function Resume() {
                     <span className="ml-2 w-0 flex-1 truncate">resume_back_end_developer.pdf</span>
                   </div>
                   <div className="ml-4 flex-shrink-0">
-                    <a href="" className="font-medium text-indigo-600 hover:text-indigo-500">
+                    <Link href="/" className="font-medium text-indigo-600 hover:text-indigo-500" download>
                       Download
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">

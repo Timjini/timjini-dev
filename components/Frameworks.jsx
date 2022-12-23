@@ -38,7 +38,7 @@ const features = [
 
 export default function Frameworks() {
   return (
-    <section className='flex justify-center items-center h-full flex-wrap gap-4 bg-gray-50' id="frameworks">
+    <section className='flex justify-center items-center h-full flex-wrap gap-4 bg-gray-50' id="tech">
   <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div
       className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
@@ -52,9 +52,9 @@ export default function Frameworks() {
 
         <a  
           className="mt-8 inline-flex items-center rounded border border-green-100 bg-green-200 px-8 py-3 text-dark hover:bg-green-300  focus:outline-none focus:ring active:text-indigo-500"
-          href="/get-started"
+          href="/about"
         >
-          <span className="text-sm font-medium"> Get Started </span>
+          <span className="text-sm font-medium"> About Me </span>
 
           <svg
             className="ml-3 h-5 w-5"

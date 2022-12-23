@@ -30,19 +30,7 @@ const projects = [
     href: '/projects/bike-race',
     icon: PhotoIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: Squares2X2Icon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: ArrowPathIcon,
-  },
+
 ]
 const callsToAction = [
   { name: 'Chat Now', href: 'https://wa.me/905412492756', icon: ChatBubbleOvalLeftIcon },

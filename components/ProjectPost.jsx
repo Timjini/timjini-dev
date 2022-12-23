@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function ProjectPost({title, excerpt, image, slug , stack,livesite, github}) {
   return (
-    <section className='flex justify-center items-center h-full flex-wrap gap-4' id="frameworks">
+    <section className='flex justify-center items-center h-full flex-wrap gap-4' id="projects">
     <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className='mx-auto max-w-lg text-center lg:mx-0 lg:text-left'>
     <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
