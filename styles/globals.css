@@ -55,6 +55,6 @@ h2{
 }
 
 .box{
-    inline-size: 400px;
+    inline-size: 300px;
     overflow-wrap: break-word;
 }
