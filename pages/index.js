@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar'
 import Frameworks from '../components/Frameworks'
 import { GraphQLClient, gql } from 'graphql-request'
 import ProjectPost from '../components/ProjectPost'
+import Contact from '../components/Contact'
 
 const endpoint = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbukk0lj2sh801uk6syyh0f9/master');
 
@@ -19,6 +20,9 @@ gql`{
     slug
     image {
       url
+    }
+    stack {
+      url 
     }
   }
 }
@@ -55,10 +59,13 @@ export default function Home({projects}) {
             excerpt={project.excerpt}
             image={project.image}
             slug={project.slug}
+            stack={project.stack}
 
              />
         ))}
         </div>
+
+        <Contact />
       
       </main>
     </>

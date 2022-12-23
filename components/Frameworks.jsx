@@ -38,7 +38,7 @@ const features = [
 
 export default function Frameworks() {
   return (
-    <section className='flex justify-center items-center h-full flex-wrap gap-4' id="frameworks">
+    <section className='flex justify-center items-center h-full flex-wrap gap-4 bg-gray-50' id="frameworks">
   <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div
       className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
