@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function ProjectPost({title, excerpt, image, slug , stack,livesite, github}) {
   return (
-    <section className='flex justify-center items-center h-full flex-wrap gap-4' id="projects">
+    <section className='flex justify-center items-center h-full flex-wrap gap-4' id="projects" key={title}>
     <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className='mx-auto max-w-lg text-center lg:mx-0 lg:text-left'>
     <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
@@ -23,6 +23,7 @@ function ProjectPost({title, excerpt, image, slug , stack,livesite, github}) {
             // eslint-disable-next-line react/jsx-key
             <Image src={stack.url} alt="" width={100} height={100}
              className='hover:scale-110 transform transition duration-500 ease-in-out'
+             key={stack.url}
             />
 
           ))}
