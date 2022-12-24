@@ -1,5 +1,6 @@
 import { BoltIcon, DevicePhoneMobileIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const features = [
   {
@@ -50,7 +51,7 @@ export default function Frameworks() {
           I have worked with multiple frameworks and languages. Here are some of the frameworks and languages I have worked with.
         </p>
 
-        <a  
+        <Link  
           className="mt-8 inline-flex items-center rounded border border-green-100 bg-green-200 px-8 py-3 text-dark hover:bg-green-300  focus:outline-none focus:ring active:text-indigo-500"
           href="/about"
         >
@@ -70,24 +71,24 @@ export default function Frameworks() {
               d="M17 8l4 4m0 0l-4 4m4-4H3"
             />
           </svg>
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 ">
         {features.map((feature) => (
-        <a
+        <Link
           className=" hover:bg-green-100 block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-green-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
           href={feature.url}
           key={feature.name}
         >
-          <Image src={feature.image} alt="" width={60} height={60} />
+          <Image src={feature.image} alt="coding language" width={60} height={60} />
 
           <h2 className="mt-2 font-bold">{feature.name}</h2>
 
           <p className=" sm:mt-1 sm:block sm:text-sm text-gray-600 hidden">
             {feature.description}
           </p>
-        </a>))}
+        </Link>))}
       </div>
     </div>
   </div>
