@@ -134,15 +134,12 @@ export default function Navbar() {
             </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              Contact
-            </a>
-            <a
-              href="#"
+            <Link
+              href="#contact"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-green-200 px-4 py-2 text-base font-medium  shadow-sm hover:bg-green-300"
             >
               Hire me
-            </a>
+            </Link>
           </div>
         </div>
       </div>
