@@ -30,7 +30,9 @@ const AboutPage = () => {
               </button>
               </Link>
           </div>
-      </div></>
+      </div>
+
+      </>
   );
 }
 
