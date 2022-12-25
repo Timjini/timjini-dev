@@ -8,32 +8,32 @@ const features = [
     description:
       'I have built multiple projects using Ruby on Rails. I am also familiar with Ruby, Ruby Gems, Ruby on Rails, MVC, REST API, and SQL.',
     icon: GlobeAltIcon,
-    image: '/ruby-programming-language-icon.svg',
-    url: 'https://rubyonrails.org/',
+    image: '/static/images/rails.png',
+    url: '/',
   },
   {
     name: 'JS Frameworks',
     description:
       'I built multiple projects using, ReactJs, NextJs, etc. I am also familiar with Redux, Context API, REST API and GraphQL.',
     icon: ScaleIcon,
-    image: '/react-js-icon.svg',
-    url: 'https://rubyonrails.org/',
+    image: '/static/images/react-js-icon.svg',
+    url: '/',
   },
   {
     name: 'Database Management',
     description:
       'I have worked with multiple databases like MySQL, PostgreSQL, MongoDB, etc. I am also familiar with SQL, NoSQL, and ORM.',
     icon: BoltIcon,
-    image: '/postgresql-icon.svg',
-    url: 'https://rubyonrails.org/',
+    image: '/static/images/postgresql-icon.svg',
+    url: '/',
   },
   {
     name: 'Front end Design',
     description:
       'familiar with most of the front-end design tools and coding framworks like figma, adobe xd, Css, Tailwind & Bootstrap.',
     icon: DevicePhoneMobileIcon,
-    image: '/css-icon.svg',
-    url: 'https://rubyonrails.org/',
+    image: '/static/images/css.webp',
+    url: '/',
   },
 ]
 
@@ -76,9 +76,8 @@ export default function Frameworks() {
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 ">
         {features.map((feature) => (
-        <Link
+        <div
           className=" hover:bg-green-100 block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-green-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href={feature.url}
           key={feature.name}
         >
           <Image src={feature.image} alt="coding language" width={60} height={60} />
@@ -88,7 +87,7 @@ export default function Frameworks() {
           <p className=" sm:mt-1 sm:block sm:text-sm text-gray-600 hidden">
             {feature.description}
           </p>
-        </Link>))}
+        </div>))}
       </div>
     </div>
   </div>

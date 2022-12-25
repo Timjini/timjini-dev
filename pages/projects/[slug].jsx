@@ -1,8 +1,6 @@
 import { GraphQLClient, gql } from 'graphql-request';
 import Navbar from '../../components/Navbar';
-import Image from 'next/image';
 import Link from 'next/link';
-import react from '../../public/react-js-icon.svg';
 import styles from '../../styles/Slug.module.css';
 
 const graphcsm = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbukk0lj2sh801uk6syyh0f9/master');

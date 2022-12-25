@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import dev from '../public/dev.jpg'
+import dev from '../public/static/images/dev.jpg'
 
 function Logos() {
   return (

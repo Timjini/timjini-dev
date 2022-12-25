@@ -1,12 +1,12 @@
 import React from 'react'
-import fullStack from '../public/full-stack-dev.png'
+import fullStack from '../public/static/images/full-stack-dev.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
 function About() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
-          <section className="rounded-lg bg-gray-200 p-8 hover:bg-green-200 ">
+          <section className="rounded-lg bg-gray-50 p-8 hover:bg-green-200 ">
               <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
                   <Image
                       alt="timjini"

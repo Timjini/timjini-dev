@@ -20,13 +20,13 @@ import Link from 'next/link'
 const projects = [
   {
     name: 'Aid Platform',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    description: 'Respond to the people who are in need.',
     href: '/projects/aid-frontend',
     icon: MapPinIcon,
   },
   {
     name: 'Bike Race',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: 'Flickr API integration, Leaflet map, React and Ruby on Rails',
     href: '/projects/bikerace',
     icon: PhotoIcon,
   },
@@ -135,7 +135,7 @@ export default function Navbar() {
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link
-              href="#contact"
+              href="/#contact"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-green-200 px-4 py-2 text-base font-medium  shadow-sm hover:bg-green-300"
             >
               Hire me
@@ -158,11 +158,13 @@ export default function Navbar() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
+                  <Link href="/">
                   <Image
                     className="h-8 w-auto"
                     src={Logo}
                     alt="Timjini Dev"
                   />
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-100">
@@ -193,18 +195,12 @@ export default function Navbar() {
                 </Link>
               </div>
               <div>
-                <a
-                  href="#"
+                <Link
+                  href="/#contact"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-300 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-400"
                 >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-green-300 hover:text-green-100">
-                    Sign in
-                  </a>
-                </p>
+                  Hire me
+                </Link>
               </div>
             </div>
           </div>

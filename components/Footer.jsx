@@ -28,14 +28,9 @@ function Footer() {
             Resume
           </Link>
         </li>
-        <li>
-          <Link className="text-gray-700 transition hover:text-gray-700/75" href="#tech">
-            Frameworks
-          </Link>
-        </li>
 
         <li>
-          <Link className="text-gray-700 transition hover:text-gray-700/75" href="#projects">
+          <Link className="text-gray-700 transition hover:text-gray-700/75" href="/#projects">
             Projects
           </Link>
         </li>

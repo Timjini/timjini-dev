@@ -4,7 +4,7 @@ import heroImg from '../public/logo-hl.png'
 import heroBanner from '../public/Ror.png'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import dev from '../public/dev.jpg'
+import dev from '../public/static/images/dev.jpg'
 
 
 function Hero() {
