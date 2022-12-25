@@ -27,7 +27,7 @@ function ProjectPost({title, excerpt, image, slug , stack,livesite, github}) {
             />
 
           ))}
-          <Link href={"https://github.com/Timjini/"+github} rel='noreferrer' target='_blank' className='m-2 text-gray-700 transition hover:text-gray-700/75'>github Repo</Link>
+          <Link href={"https://github.com/Timjini/"+slug} rel='noreferrer' target='_blank' className='m-2 text-gray-700 transition hover:text-gray-700/75'>github Repo</Link>
           <Link href="/" className='m-2 text-gray-700 transition hover:text-gray-700/75'>Live Project</Link>
           <Link href={"/projects/"+slug}  className='m-2 text-gray-700 transition hover:text-gray-700/75'>Read More</Link>
         </div>

@@ -21,13 +21,13 @@ const projects = [
   {
     name: 'Aid Platform',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '/projects/aid-platform',
+    href: '/projects/aid-frontend',
     icon: MapPinIcon,
   },
   {
     name: 'Bike Race',
     description: 'Speak directly to your customers in a more meaningful way.',
-    href: '/projects/bike-race',
+    href: '/projects/bikerace',
     icon: PhotoIcon,
   },
 
