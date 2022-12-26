@@ -19,8 +19,8 @@ gql`{
     title
     excerpt
     slug
-    github
     livesite
+    github
     image {
       url
     }
@@ -65,6 +65,8 @@ export default function Home({projects}) {
             image={project.image}
             slug={project.slug}
             stack={project.stack}
+            livesite={project.livesite}
+            github={project.github}
 
              />
         ))}

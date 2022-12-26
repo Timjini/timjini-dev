@@ -2,6 +2,10 @@ import { GraphQLClient, gql } from 'graphql-request';
 import Navbar from '../../components/Navbar';
 import Link from 'next/link';
 import styles from '../../styles/Slug.module.css';
+import { motion  } from "framer-motion"
+import { useScroll } from "framer-motion"
+import { useSpring } from "framer-motion"
+
 
 const graphcsm = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbukk0lj2sh801uk6syyh0f9/master');
 
@@ -42,6 +46,7 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps({ params }) {
+    
     const {slug} = params;
     const data = await graphcsm.request(Query, { slug });
     const project = data.project;
@@ -53,9 +58,19 @@ export async function getStaticProps({ params }) {
     };
 }
 
+
+
 export default function ProjectPage({ project }) {
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+      restDelta: 0.001
+    });
+
     return (
         <><Navbar />
+        <motion.div className="progress-bar" style={{ scaleX }} />
         <section className="">
          <div className='flex justify-center items-center h-full flex-wrap bg-gray-100 p-12'>
             <Link href='/' className='hover:text-green-300'>

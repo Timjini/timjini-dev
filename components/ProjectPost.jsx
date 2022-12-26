@@ -17,18 +17,18 @@ function ProjectPost({title, excerpt, image, slug , stack,livesite, github}) {
       <div
         className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
       >
-        <div className="grid grid-cols-3 gap-4 sm:grid-cols-3 ">
+        <div className="grid grid-cols-3 gap-4 sm:grid-cols-3  py-5" >
           {stack.map((stack) => (
          
             // eslint-disable-next-line react/jsx-key
-            <Image src={stack.url} alt="" width={100} height={100}
+            <Image src={stack.url} alt="" width={90} height={90}
              className='hover:scale-110 transform transition duration-500 ease-in-out'
              key={stack.url}
             />
 
           ))}
           <Link href={"https://github.com/Timjini/"+slug} rel='noreferrer' target='_blank' className='m-2 text-gray-700 transition hover:text-gray-700/75'>github Repo</Link>
-          <Link href="/" className='m-2 text-gray-700 transition hover:text-gray-700/75'>Live Project</Link>
+          <Link href={`${livesite}`} target="_blank" className='m-2 text-gray-700 transition hover:text-gray-700/75'>Live Project</Link>
           <Link href={"/projects/"+slug}  className='m-2 text-gray-700 transition hover:text-gray-700/75'>Read More</Link>
         </div>
         <div className="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
