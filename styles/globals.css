@@ -63,3 +63,29 @@ h2{
     background: var(--primary);
     transform-origin: 0%;
   }
+
+
+
+.hiddenx{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+.showx{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+
+.card:nth-child(2){
+    transition-delay: 300ms;
+}
+.card:nth-child(3){
+    transition-delay: 400ms;
+}
+.card:nth-child(4){
+    transition-delay: 500ms;
+}

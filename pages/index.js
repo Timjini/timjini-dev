@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -9,6 +10,8 @@ import { GraphQLClient, gql } from 'graphql-request'
 import ProjectPost from '../components/ProjectPost'
 import Contact from '../components/Contact'
 import About from '../components/About'
+import { motion } from 'framer-motion'
+
 
 const endpoint = new GraphQLClient('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clbukk0lj2sh801uk6syyh0f9/master');
 
@@ -44,6 +47,12 @@ export async function getStaticProps() {
 
 
 export default function Home({projects}) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <>
       <Head>
@@ -56,7 +65,7 @@ export default function Home({projects}) {
         <Navbar />
         <Hero />
         <Frameworks />
-        <div>
+        <div className={isVisible ? 'showx' : 'hiddenx'}>
         {projects.map((project) => (
           <ProjectPost 
             key={project.id} 
@@ -67,6 +76,7 @@ export default function Home({projects}) {
             stack={project.stack}
             livesite={project.livesite}
             github={project.github}
+            className="card"
 
              />
         ))}
