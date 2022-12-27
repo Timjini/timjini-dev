@@ -53,6 +53,16 @@ export default function Home({projects}) {
     setIsVisible(true);
   }, []);
 
+  //repeat animation
+
+  const [repeat, setRepeat] = useState(false);
+
+  useEffect(() => {
+    setRepeat(true);
+  }, []);
+
+
+
   return (
     <>
       <Head>
@@ -65,7 +75,7 @@ export default function Home({projects}) {
         <Navbar />
         <Hero />
         <Frameworks />
-        <div className={isVisible ? 'showx' : 'hiddenx'}>
+        <div className={isVisible ? 'showx' : 'hiddenx' }>
         {projects.map((project) => (
           <ProjectPost 
             key={project.id} 

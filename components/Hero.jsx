@@ -15,7 +15,7 @@ function Hero() {
           className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
         >
           <div className="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
-            <h2 className="text-3xl font-bold sm:text-4xl">Full Stack Dev RoR & JS Frameworks</h2>
+            <h2 className="text-5xl font-bold sm:text-5xl">Full Stack Dev RoR & JS Frameworks</h2>
 
             <p className="mt-4 text-gray-600">
               I have worked with multiple frameworks and languages. Here are some of the frameworks and languages I have worked with.
