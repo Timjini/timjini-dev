@@ -105,3 +105,58 @@ h2{
     transition-timing-function: ease-in-out;
   }
 }
+
+/* Projects Style */
+.flex-post{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 50vh;
+}
+.flex-post-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #78C475;
+}
+
+
+.box{
+    /* wrap text */
+    max-width: 450px;
+    text-align: center;
+}
+
+.flex-post-links{
+    padding-top:2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    font-size: 0.5rem;
+}
+
+.flex-post-links span {
+    font-size: 0.8rem;
+}
+
+.link-btn {
+    background-color: var(--cadet-blue);
+    color: white;
+    padding: 10px;  
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    text-transform: uppercase;
+}
