@@ -4,7 +4,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Hero from '../components/Hero'
 import Logos from '../components/Logos'
-import Navbar from '../components/Navbar'
 import Frameworks from '../components/Frameworks'
 import { GraphQLClient, gql } from 'graphql-request'
 import ProjectPost from '../components/ProjectPost'
@@ -72,7 +71,6 @@ export default function Home({projects}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Navbar />
         <Hero />
         <Frameworks />
         <div className={isVisible ? 'showx' : 'hiddenx' }>

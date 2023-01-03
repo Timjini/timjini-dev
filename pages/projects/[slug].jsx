@@ -1,5 +1,4 @@
 import { GraphQLClient, gql } from 'graphql-request';
-import Navbar from '../../components/Navbar';
 import Link from 'next/link';
 import styles from '../../styles/Slug.module.css';
 import { motion  } from "framer-motion"
@@ -70,7 +69,7 @@ export default function ProjectPage({ project }) {
     });
 
     return (
-        <><Navbar />
+        <>
         <motion.div className="progress-bar" style={{ scaleX }} />
         <section className="">
          <div className='flex justify-center items-center h-full flex-wrap bg-gray-100 p-12 bg-gradient-to-r from-gray-200 to-green-400'>

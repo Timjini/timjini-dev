@@ -1,11 +1,9 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
-import Navbar from '../components/Navbar'
 import Link from 'next/link'
 
 export default function Resume() {
   return (
     <>
-    <Navbar/>
     <div className="overflow-hidden bg-white shadow sm:rounded-lg md:p-20 p-5 ">
       <div className="px-4 py-5 sm:px-6">
         <h3 className="text-lg font-medium leading-6 text-gray-900">Resume</h3>

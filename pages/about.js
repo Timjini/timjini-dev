@@ -1,12 +1,11 @@
 import React from 'react';
 import Profile from '../public/profile.png'
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
 import Link from 'next/link'
 
 const AboutPage = () => {
   return (
-    <><Navbar /><div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center py-8  px-2">
+    <><div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center py-8  px-2">
           <div className="w-full max-w-md">
               <div className="flex justify-center mb-6">
                   <Image src={Profile} alt="Profile Picture" className="w-32 h-32 rounded-full" />
