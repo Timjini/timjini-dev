@@ -7,7 +7,7 @@ import Link from 'next/link'
 function ProjectPost({title, excerpt, image, slug , stack,livesite, github}) {
   return (
 
-    <section className='flex-post'>
+    <section className='flex-post' id="projects">
       <div className='flex-post-content bg-green-200'>
         <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
         <p className="mt-4 mb-1 text-gray-600 box"> {excerpt}</p>
